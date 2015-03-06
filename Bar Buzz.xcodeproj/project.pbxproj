@@ -13,6 +13,7 @@
 		A8B21B681AAA3A7E005D7E99 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8B21B671AAA3A7E005D7E99 /* Images.xcassets */; };
 		A8B21B6B1AAA3A7E005D7E99 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8B21B691AAA3A7E005D7E99 /* LaunchScreen.xib */; };
 		A8B21B771AAA3A7E005D7E99 /* Bar_BuzzTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A8B21B761AAA3A7E005D7E99 /* Bar_BuzzTests.m */; };
+		A8B21B821AAA4832005D7E99 /* UIColor+BBColors.m in Sources */ = {isa = PBXBuildFile; fileRef = A8B21B811AAA4832005D7E99 /* UIColor+BBColors.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,8 @@
 		A8B21B701AAA3A7E005D7E99 /* Bar BuzzTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Bar BuzzTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8B21B751AAA3A7E005D7E99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A8B21B761AAA3A7E005D7E99 /* Bar_BuzzTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Bar_BuzzTests.m; sourceTree = "<group>"; };
+		A8B21B801AAA4832005D7E99 /* UIColor+BBColors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+BBColors.h"; sourceTree = "<group>"; };
+		A8B21B811AAA4832005D7E99 /* UIColor+BBColors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+BBColors.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +86,7 @@
 				A8B21B5F1AAA3A7E005D7E99 /* BBAppDelegate.m */,
 				A8B21B611AAA3A7E005D7E99 /* BBRootViewController.h */,
 				A8B21B621AAA3A7E005D7E99 /* BBRootViewController.m */,
+				A8B21B831AAA483D005D7E99 /* Categories */,
 				A8B21B671AAA3A7E005D7E99 /* Images.xcassets */,
 				A8B21B691AAA3A7E005D7E99 /* LaunchScreen.xib */,
 				A8B21B5A1AAA3A7E005D7E99 /* Supporting Files */,
@@ -114,6 +118,15 @@
 				A8B21B751AAA3A7E005D7E99 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A8B21B831AAA483D005D7E99 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				A8B21B801AAA4832005D7E99 /* UIColor+BBColors.h */,
+				A8B21B811AAA4832005D7E99 /* UIColor+BBColors.m */,
+			);
+			name = Categories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,6 +232,7 @@
 				A8B21B631AAA3A7E005D7E99 /* BBRootViewController.m in Sources */,
 				A8B21B601AAA3A7E005D7E99 /* BBAppDelegate.m in Sources */,
 				A8B21B5D1AAA3A7E005D7E99 /* main.m in Sources */,
+				A8B21B821AAA4832005D7E99 /* UIColor+BBColors.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
