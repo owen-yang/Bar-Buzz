@@ -1,5 +1,5 @@
 //
-//  AppDelegate.h
+//  BBViewController.h
 //  Bar Buzz
 //
 //  Created by Owen Yang on 3/6/15.
@@ -8,9 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
-
-@property (strong, nonatomic) UIWindow *window;
+@interface BBRootViewController : UIViewController
 
 
 @end

@@ -1,22 +1,27 @@
 //
-//  AppDelegate.m
+//  BBAppDelegate.m
 //  Bar Buzz
 //
 //  Created by Owen Yang on 3/6/15.
 //  Copyright (c) 2015 Bar Buzz. All rights reserved.
 //
 
-#import "AppDelegate.h"
+#import "BBAppDelegate.h"
 
-@interface AppDelegate ()
+#import "BBRootViewController.h"
+
+@interface BBAppDelegate ()
 
 @end
 
-@implementation AppDelegate
+@implementation BBAppDelegate
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window.backgroundColor = [UIColor blackColor];
+    self.window.rootViewController = [BBRootViewController new];
+    [self.window makeKeyAndVisible];
     return YES;
 }
 

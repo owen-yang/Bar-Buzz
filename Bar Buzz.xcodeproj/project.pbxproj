@@ -8,9 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		A8B21B5D1AAA3A7E005D7E99 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A8B21B5C1AAA3A7E005D7E99 /* main.m */; };
-		A8B21B601AAA3A7E005D7E99 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A8B21B5F1AAA3A7E005D7E99 /* AppDelegate.m */; };
-		A8B21B631AAA3A7E005D7E99 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8B21B621AAA3A7E005D7E99 /* ViewController.m */; };
-		A8B21B661AAA3A7E005D7E99 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8B21B641AAA3A7E005D7E99 /* Main.storyboard */; };
+		A8B21B601AAA3A7E005D7E99 /* BBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A8B21B5F1AAA3A7E005D7E99 /* BBAppDelegate.m */; };
+		A8B21B631AAA3A7E005D7E99 /* BBRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8B21B621AAA3A7E005D7E99 /* BBRootViewController.m */; };
 		A8B21B681AAA3A7E005D7E99 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8B21B671AAA3A7E005D7E99 /* Images.xcassets */; };
 		A8B21B6B1AAA3A7E005D7E99 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8B21B691AAA3A7E005D7E99 /* LaunchScreen.xib */; };
 		A8B21B771AAA3A7E005D7E99 /* Bar_BuzzTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A8B21B761AAA3A7E005D7E99 /* Bar_BuzzTests.m */; };
@@ -30,11 +29,10 @@
 		A8B21B571AAA3A7E005D7E99 /* Bar Buzz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bar Buzz.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8B21B5B1AAA3A7E005D7E99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A8B21B5C1AAA3A7E005D7E99 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		A8B21B5E1AAA3A7E005D7E99 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		A8B21B5F1AAA3A7E005D7E99 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		A8B21B611AAA3A7E005D7E99 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		A8B21B621AAA3A7E005D7E99 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		A8B21B651AAA3A7E005D7E99 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A8B21B5E1AAA3A7E005D7E99 /* BBAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BBAppDelegate.h; sourceTree = "<group>"; };
+		A8B21B5F1AAA3A7E005D7E99 /* BBAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BBAppDelegate.m; sourceTree = "<group>"; };
+		A8B21B611AAA3A7E005D7E99 /* BBRootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BBRootViewController.h; sourceTree = "<group>"; };
+		A8B21B621AAA3A7E005D7E99 /* BBRootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BBRootViewController.m; sourceTree = "<group>"; };
 		A8B21B671AAA3A7E005D7E99 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		A8B21B6A1AAA3A7E005D7E99 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		A8B21B701AAA3A7E005D7E99 /* Bar BuzzTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Bar BuzzTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -81,11 +79,10 @@
 		A8B21B591AAA3A7E005D7E99 /* Bar Buzz */ = {
 			isa = PBXGroup;
 			children = (
-				A8B21B5E1AAA3A7E005D7E99 /* AppDelegate.h */,
-				A8B21B5F1AAA3A7E005D7E99 /* AppDelegate.m */,
-				A8B21B611AAA3A7E005D7E99 /* ViewController.h */,
-				A8B21B621AAA3A7E005D7E99 /* ViewController.m */,
-				A8B21B641AAA3A7E005D7E99 /* Main.storyboard */,
+				A8B21B5E1AAA3A7E005D7E99 /* BBAppDelegate.h */,
+				A8B21B5F1AAA3A7E005D7E99 /* BBAppDelegate.m */,
+				A8B21B611AAA3A7E005D7E99 /* BBRootViewController.h */,
+				A8B21B621AAA3A7E005D7E99 /* BBRootViewController.m */,
 				A8B21B671AAA3A7E005D7E99 /* Images.xcassets */,
 				A8B21B691AAA3A7E005D7E99 /* LaunchScreen.xib */,
 				A8B21B5A1AAA3A7E005D7E99 /* Supporting Files */,
@@ -163,6 +160,7 @@
 		A8B21B4F1AAA3A7E005D7E99 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = BB;
 				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = "Bar Buzz";
 				TargetAttributes = {
@@ -199,7 +197,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A8B21B661AAA3A7E005D7E99 /* Main.storyboard in Resources */,
 				A8B21B6B1AAA3A7E005D7E99 /* LaunchScreen.xib in Resources */,
 				A8B21B681AAA3A7E005D7E99 /* Images.xcassets in Resources */,
 			);
@@ -219,8 +216,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A8B21B631AAA3A7E005D7E99 /* ViewController.m in Sources */,
-				A8B21B601AAA3A7E005D7E99 /* AppDelegate.m in Sources */,
+				A8B21B631AAA3A7E005D7E99 /* BBRootViewController.m in Sources */,
+				A8B21B601AAA3A7E005D7E99 /* BBAppDelegate.m in Sources */,
 				A8B21B5D1AAA3A7E005D7E99 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -244,14 +241,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		A8B21B641AAA3A7E005D7E99 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A8B21B651AAA3A7E005D7E99 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		A8B21B691AAA3A7E005D7E99 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -343,7 +332,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Bar Buzz/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -353,7 +344,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Bar Buzz/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
