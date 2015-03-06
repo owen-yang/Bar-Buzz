@@ -28,6 +28,13 @@
 	<array>
 		<string>armv7</string>
 	</array>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Lovelo Black.otf</string>
+		<string>Lovelo Line Bold.otf</string>
+		<string>Lovelo Line Light.otf</string>
+		<string>Calibri.ttf</string>
+	</array>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>

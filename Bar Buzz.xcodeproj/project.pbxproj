@@ -14,6 +14,10 @@
 		A8B21B6B1AAA3A7E005D7E99 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8B21B691AAA3A7E005D7E99 /* LaunchScreen.xib */; };
 		A8B21B771AAA3A7E005D7E99 /* Bar_BuzzTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A8B21B761AAA3A7E005D7E99 /* Bar_BuzzTests.m */; };
 		A8B21B821AAA4832005D7E99 /* UIColor+BBColors.m in Sources */ = {isa = PBXBuildFile; fileRef = A8B21B811AAA4832005D7E99 /* UIColor+BBColors.m */; };
+		A8DF19F21AAA50B200893556 /* Lovelo Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = A8DF19EE1AAA4FBB00893556 /* Lovelo Black.otf */; };
+		A8DF19F31AAA50B200893556 /* Lovelo Line Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = A8DF19EF1AAA4FBB00893556 /* Lovelo Line Bold.otf */; };
+		A8DF19F41AAA50B200893556 /* Lovelo Line Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = A8DF19F01AAA4FBB00893556 /* Lovelo Line Light.otf */; };
+		A8DF19F61AAA51B900893556 /* Calibri.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A8DF19F51AAA51B000893556 /* Calibri.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +45,10 @@
 		A8B21B761AAA3A7E005D7E99 /* Bar_BuzzTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Bar_BuzzTests.m; sourceTree = "<group>"; };
 		A8B21B801AAA4832005D7E99 /* UIColor+BBColors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+BBColors.h"; sourceTree = "<group>"; };
 		A8B21B811AAA4832005D7E99 /* UIColor+BBColors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+BBColors.m"; sourceTree = "<group>"; };
+		A8DF19EE1AAA4FBB00893556 /* Lovelo Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lovelo Black.otf"; sourceTree = "<group>"; };
+		A8DF19EF1AAA4FBB00893556 /* Lovelo Line Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lovelo Line Bold.otf"; sourceTree = "<group>"; };
+		A8DF19F01AAA4FBB00893556 /* Lovelo Line Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lovelo Line Light.otf"; sourceTree = "<group>"; };
+		A8DF19F51AAA51B000893556 /* Calibri.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Calibri.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +94,7 @@
 				A8B21B5F1AAA3A7E005D7E99 /* BBAppDelegate.m */,
 				A8B21B611AAA3A7E005D7E99 /* BBRootViewController.h */,
 				A8B21B621AAA3A7E005D7E99 /* BBRootViewController.m */,
+				A8DF19F11AAA502000893556 /* Fonts */,
 				A8B21B831AAA483D005D7E99 /* Categories */,
 				A8B21B671AAA3A7E005D7E99 /* Images.xcassets */,
 				A8B21B691AAA3A7E005D7E99 /* LaunchScreen.xib */,
@@ -127,6 +136,17 @@
 				A8B21B811AAA4832005D7E99 /* UIColor+BBColors.m */,
 			);
 			name = Categories;
+			sourceTree = "<group>";
+		};
+		A8DF19F11AAA502000893556 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				A8DF19EE1AAA4FBB00893556 /* Lovelo Black.otf */,
+				A8DF19EF1AAA4FBB00893556 /* Lovelo Line Bold.otf */,
+				A8DF19F01AAA4FBB00893556 /* Lovelo Line Light.otf */,
+				A8DF19F51AAA51B000893556 /* Calibri.ttf */,
+			);
+			name = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -210,6 +230,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8DF19F61AAA51B900893556 /* Calibri.ttf in Resources */,
+				A8DF19F21AAA50B200893556 /* Lovelo Black.otf in Resources */,
+				A8DF19F31AAA50B200893556 /* Lovelo Line Bold.otf in Resources */,
+				A8DF19F41AAA50B200893556 /* Lovelo Line Light.otf in Resources */,
 				A8B21B6B1AAA3A7E005D7E99 /* LaunchScreen.xib in Resources */,
 				A8B21B681AAA3A7E005D7E99 /* Images.xcassets in Resources */,
 			);
@@ -419,6 +443,7 @@
 				A8B21B7C1AAA3A7E005D7E99 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A8B21B7D1AAA3A7E005D7E99 /* Build configuration list for PBXNativeTarget "Bar BuzzTests" */ = {
 			isa = XCConfigurationList;
@@ -427,6 +452,7 @@
 				A8B21B7F1AAA3A7E005D7E99 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
