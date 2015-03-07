@@ -8,6 +8,8 @@
 
 #import "BBRootViewController.h"
 
+#import "BBSplashViewController.h"
+
 @interface BBRootViewController ()
 
 @end
@@ -25,6 +27,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor blackColor];
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    
+    [self presentViewController:[BBSplashViewController new] animated:YES completion:nil];
 }
 
 @end

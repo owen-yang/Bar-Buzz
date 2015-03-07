@@ -26,7 +26,7 @@
 }
 
 + (UIColor*)BBCyan {
-    return [UIColor colorWithHex:0x3830CC alpha:1.0];
+    return [UIColor colorWithHex:0x38C0CC alpha:1.0];
 }
 
 + (UIColor*)BBGray {

@@ -18,6 +18,8 @@
 		A8DF19F31AAA50B200893556 /* Lovelo Line Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = A8DF19EF1AAA4FBB00893556 /* Lovelo Line Bold.otf */; };
 		A8DF19F41AAA50B200893556 /* Lovelo Line Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = A8DF19F01AAA4FBB00893556 /* Lovelo Line Light.otf */; };
 		A8DF19F61AAA51B900893556 /* Calibri.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A8DF19F51AAA51B000893556 /* Calibri.ttf */; };
+		A8DF19F91AAA52DD00893556 /* BBSplashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8DF19F81AAA52DD00893556 /* BBSplashViewController.m */; };
+		A8DF19FC1AAA530500893556 /* BBConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = A8DF19FB1AAA530500893556 /* BBConstants.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,11 @@
 		A8DF19EF1AAA4FBB00893556 /* Lovelo Line Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lovelo Line Bold.otf"; sourceTree = "<group>"; };
 		A8DF19F01AAA4FBB00893556 /* Lovelo Line Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lovelo Line Light.otf"; sourceTree = "<group>"; };
 		A8DF19F51AAA51B000893556 /* Calibri.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Calibri.ttf; sourceTree = "<group>"; };
+		A8DF19F71AAA52DD00893556 /* BBSplashViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBSplashViewController.h; sourceTree = "<group>"; };
+		A8DF19F81AAA52DD00893556 /* BBSplashViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBSplashViewController.m; sourceTree = "<group>"; };
+		A8DF19FA1AAA530500893556 /* BBConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBConstants.h; sourceTree = "<group>"; };
+		A8DF19FB1AAA530500893556 /* BBConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBConstants.m; sourceTree = "<group>"; };
+		A8DF19FD1AAA553900893556 /* BBPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BBPrefixHeader.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,14 +97,19 @@
 		A8B21B591AAA3A7E005D7E99 /* Bar Buzz */ = {
 			isa = PBXGroup;
 			children = (
+				A8DF19FD1AAA553900893556 /* BBPrefixHeader.pch */,
 				A8B21B5E1AAA3A7E005D7E99 /* BBAppDelegate.h */,
 				A8B21B5F1AAA3A7E005D7E99 /* BBAppDelegate.m */,
+				A8DF19FA1AAA530500893556 /* BBConstants.h */,
+				A8DF19FB1AAA530500893556 /* BBConstants.m */,
 				A8B21B611AAA3A7E005D7E99 /* BBRootViewController.h */,
 				A8B21B621AAA3A7E005D7E99 /* BBRootViewController.m */,
-				A8DF19F11AAA502000893556 /* Fonts */,
+				A8DF19F71AAA52DD00893556 /* BBSplashViewController.h */,
+				A8DF19F81AAA52DD00893556 /* BBSplashViewController.m */,
 				A8B21B831AAA483D005D7E99 /* Categories */,
 				A8B21B671AAA3A7E005D7E99 /* Images.xcassets */,
 				A8B21B691AAA3A7E005D7E99 /* LaunchScreen.xib */,
+				A8DF19F11AAA502000893556 /* Fonts */,
 				A8B21B5A1AAA3A7E005D7E99 /* Supporting Files */,
 			);
 			path = "Bar Buzz";
@@ -255,6 +267,8 @@
 			files = (
 				A8B21B631AAA3A7E005D7E99 /* BBRootViewController.m in Sources */,
 				A8B21B601AAA3A7E005D7E99 /* BBAppDelegate.m in Sources */,
+				A8DF19F91AAA52DD00893556 /* BBSplashViewController.m in Sources */,
+				A8DF19FC1AAA530500893556 /* BBConstants.m in Sources */,
 				A8B21B5D1AAA3A7E005D7E99 /* main.m in Sources */,
 				A8B21B821AAA4832005D7E99 /* UIColor+BBColors.m in Sources */,
 			);
@@ -371,6 +385,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Bar Buzz/BBPrefixHeader.pch";
 				INFOPLIST_FILE = "Bar Buzz/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -383,6 +399,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Bar Buzz/BBPrefixHeader.pch";
 				INFOPLIST_FILE = "Bar Buzz/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
