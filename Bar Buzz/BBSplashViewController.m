@@ -33,6 +33,14 @@
 
 @implementation BBSplashViewController
 
+- (instancetype)init {
+    self = [super init];
+    if (self) {
+        self.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
+    }
+    return self;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor blackColor];
@@ -42,10 +50,6 @@
 
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
-    
-    [self animateLinesWithReset:YES completion:^{
-        [self animateTitleWithReset:YES completion:nil];
-    }];
 }
 
 - (void)loadSubviews {
@@ -180,10 +184,11 @@ static const CGFloat kLineAnimationDuration = 0.30;
                      }];
 }
 
-static const CGFloat kTitleAnimationDuration = 0.5; // how long it takes for the title to fade (in seconds)
-static const CGFloat kTitleFadeSteps = 100;         // how many steps from alpha = 1.0 to alpha = 0.0
+static const CGFloat kTitleFadeDuration = 0.10; // how long it takes for the title to fade (in seconds)
+static const CGFloat kTitleFadeSteps = 25;      // how many steps from alpha = 1.0 to alpha = 0.0
+static const CGFloat kTitleMoveDuration = 0.50; // how long it takes for the title to move (in seconds)
 
-static const CGFloat titleFadeSecondsPerStep = kTitleAnimationDuration / kTitleFadeSteps;
+static const CGFloat titleFadeSecondsPerStep = kTitleFadeDuration / kTitleFadeSteps;
 static const CGFloat titleFadeStep = 1 / kTitleFadeSteps;
 
 - (void)animateTitleWithReset:(BOOL)reset completion:(void (^)())completion {
@@ -219,11 +224,12 @@ static const CGFloat titleFadeStep = 1 / kTitleFadeSteps;
         }
         self.buzzLabel.attributedText = [mutableAttributedString copy];
         
+        
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(titleFadeSecondsPerStep * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
             [self animateTitleWithReset:NO completion:completion];
         });
     } else {
-        [UIView animateWithDuration:kTitleAnimationDuration
+        [UIView animateWithDuration:kTitleMoveDuration
                               delay:0
                             options:UIViewAnimationOptionCurveEaseInOut
                          animations:^{
@@ -242,6 +248,16 @@ static const CGFloat titleFadeStep = 1 / kTitleFadeSteps;
                              !completion ?: completion();
                          }];
     }
+}
+
+- (void)beginDismissSequence:(void (^)())completion {
+    [self animateLinesWithReset:YES completion:^{
+        [self animateTitleWithReset:YES completion:^{
+            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+                [self dismissViewControllerAnimated:YES completion:completion];
+            });
+        }];
+    }];
 }
 
 @end

@@ -32,7 +32,12 @@
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
     
-    [self presentViewController:[BBSplashViewController new] animated:YES completion:nil];
+    BBSplashViewController *vc = [BBSplashViewController new];
+    [self presentViewController:vc animated:NO completion:^{
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            [vc beginDismissSequence:nil];
+        });
+    }];
 }
 
 @end
