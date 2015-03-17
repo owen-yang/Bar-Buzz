@@ -1,0 +1,15 @@
+{
+  "name": "barbuzz",
+  "version": "1.0.0",
+  "description": "The official Bar Buzz server.",
+  "author": "Owen Yang",
+  "dependencies": {
+    "body-parser": "^1.12.1",
+    "express": "^4.12.2",
+    "mongoose": "^3.8.25",
+    "node-restful": "^0.1.18"
+  },
+  "scripts": {
+    "start": "node server.js"
+  }
+}

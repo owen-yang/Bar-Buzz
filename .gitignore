@@ -1,2 +1,5 @@
 
 app-ios/Bar Buzz.xcodeproj/project.xcworkspace/xcshareddata/Bar Buzz.xccheckout
+
+node_modules
+server/sftp-config.json
