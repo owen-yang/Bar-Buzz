@@ -3,6 +3,7 @@ var mongoose = restful.mongoose;
 
 var barSchema = mongoose.Schema({
     name: String,
+    nickname: String,
     address: String,
     promotions: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Promotion' }]
 });

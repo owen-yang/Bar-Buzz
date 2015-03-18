@@ -25,7 +25,10 @@ if (process.env.MODE === 'prod') {
     server.listen(3000);
     console.log('LIVE - Development Mode');
 } else {
-    console.log('Server is not running');
+    console.log('SERVER NOT STARTED');
+    console.log('Please specify a valid server mode:');
+    console.log('MODE=[prod|dev] [node|nodemon] server.js\n');
+    process.exit();
 }
 
 // How to handle uncaught exceptions
