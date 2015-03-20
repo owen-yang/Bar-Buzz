@@ -7,6 +7,8 @@ var init = function() {
     require('mongoose').connect('mongodb://localhost:27017/barbuzz');
 
     require('./init')(function() {
+
+        console.log('Database reset complete');
         process.exit();
     });
 };

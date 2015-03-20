@@ -1,4 +1,4 @@
-var Bar = require('./../../models/bar.js');
+var Bar = require('../../models/bar.js');
 var bars = require('fs').readFileSync(__dirname+'/bars.csv',{encoding:'utf8'}).split('\n');
 
 module.exports = function (next) {
