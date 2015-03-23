@@ -88,7 +88,7 @@ function requestLatLong(address, callback) {
     var reqString = 'https://maps.googleapis.com/maps/api/geocode/json?address='
                     + address.replace(/ /g, '+').replace(/#/g, '')
                     + '&key='
-                    + constants.SERVER_API_KEY;
+                    + constants.GOOGLE_SERVER_API_KEY;
 
     require('https').get(reqString, function (res) {
         var data = '';
@@ -123,14 +123,14 @@ Bar.route('locate.get', function (req, res) {
     var keys = Object.keys(req.query);
     for (var i in keys) {
         if (validKeys.indexOf(keys[i]) == -1) {
-            res.status('400').send('Invalid request parameter(s)');
+            res.status(400).send('Invalid request parameter(s)');
             return;
         }
     }
 
     // Check to make sure lat/lng are included
     if (!('lat' in req.query) || !('lng' in req.query)) {
-        res.status('400').send('Missing required request parameter(s)');
+        res.status(400).send('Missing required request parameter(s)');
         return;
     }
 
@@ -152,7 +152,7 @@ Bar.route('locate.get', function (req, res) {
     // Execute query
     Bar.where('location').near(options).exec(function (err, results) {
         if (err) {
-            res.status('500').send('There was an error completing your request');
+            res.status(500).send(err);
         } else {
             res.send(results);
         }
