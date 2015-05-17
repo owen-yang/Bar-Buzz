@@ -12,4 +12,8 @@
 
 NSString *const BBLogoFont = @"LoveloLineBold";
 
+/* NOTIFICATIONS */
+NSString *const BBNotificationBarsUpdated = @"BBNotificationBarsUpdated";
+NSString *const BBNotificationBarsUpdateFailed = @"BBNotificationBarsUpdateFailed";
+
 @end

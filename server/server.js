@@ -4,7 +4,7 @@ var server = express();
 require('./api')(server);
 
 server.get('/', function (req, res) {
-    res.send('Bar Buzz coming soon');
+    res.send('<h1><center>Bar Buzz coming soon</center></h1>');
 });
 
 

@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A8A73F5F1B07D57E0084B5C2 /* BBNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = A8A73F5E1B07D57E0084B5C2 /* BBNetworking.m */; };
+		A8A73F631B082BB30084B5C2 /* BBSBars.m in Sources */ = {isa = PBXBuildFile; fileRef = A8A73F621B082BB30084B5C2 /* BBSBars.m */; };
+		A8A73F661B094D4A0084B5C2 /* BBBar.m in Sources */ = {isa = PBXBuildFile; fileRef = A8A73F651B094D4A0084B5C2 /* BBBar.m */; };
+		A8A73F691B0950000084B5C2 /* BBSLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = A8A73F681B0950000084B5C2 /* BBSLocation.m */; };
 		A8B21B5D1AAA3A7E005D7E99 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A8B21B5C1AAA3A7E005D7E99 /* main.m */; };
 		A8B21B601AAA3A7E005D7E99 /* BBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A8B21B5F1AAA3A7E005D7E99 /* BBAppDelegate.m */; };
 		A8B21B631AAA3A7E005D7E99 /* BBRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8B21B621AAA3A7E005D7E99 /* BBRootViewController.m */; };
@@ -33,6 +37,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A8A73F5D1B07D57E0084B5C2 /* BBNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBNetworking.h; sourceTree = "<group>"; };
+		A8A73F5E1B07D57E0084B5C2 /* BBNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBNetworking.m; sourceTree = "<group>"; };
+		A8A73F611B082BB30084B5C2 /* BBSBars.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBSBars.h; sourceTree = "<group>"; };
+		A8A73F621B082BB30084B5C2 /* BBSBars.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBSBars.m; sourceTree = "<group>"; };
+		A8A73F641B094D4A0084B5C2 /* BBBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBBar.h; sourceTree = "<group>"; };
+		A8A73F651B094D4A0084B5C2 /* BBBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBBar.m; sourceTree = "<group>"; };
+		A8A73F671B0950000084B5C2 /* BBSLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBSLocation.h; sourceTree = "<group>"; };
+		A8A73F681B0950000084B5C2 /* BBSLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBSLocation.m; sourceTree = "<group>"; };
 		A8B21B571AAA3A7E005D7E99 /* Bar Buzz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bar Buzz.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8B21B5B1AAA3A7E005D7E99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A8B21B5C1AAA3A7E005D7E99 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -76,6 +88,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A8A73F591B07BE340084B5C2 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				A8DF19FA1AAA530500893556 /* BBConstants.h */,
+				A8DF19FB1AAA530500893556 /* BBConstants.m */,
+			);
+			name = Constants;
+			sourceTree = "<group>";
+		};
+		A8A73F601B07EC280084B5C2 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				A8A73F5D1B07D57E0084B5C2 /* BBNetworking.h */,
+				A8A73F5E1B07D57E0084B5C2 /* BBNetworking.m */,
+			);
+			name = Networking;
+			sourceTree = "<group>";
+		};
 		A8B21B4E1AAA3A7D005D7E99 = {
 			isa = PBXGroup;
 			children = (
@@ -100,12 +130,18 @@
 				A8DF19FD1AAA553900893556 /* BBPrefixHeader.pch */,
 				A8B21B5E1AAA3A7E005D7E99 /* BBAppDelegate.h */,
 				A8B21B5F1AAA3A7E005D7E99 /* BBAppDelegate.m */,
-				A8DF19FA1AAA530500893556 /* BBConstants.h */,
-				A8DF19FB1AAA530500893556 /* BBConstants.m */,
+				A8A73F601B07EC280084B5C2 /* Networking */,
+				A8A73F591B07BE340084B5C2 /* Constants */,
 				A8B21B611AAA3A7E005D7E99 /* BBRootViewController.h */,
 				A8B21B621AAA3A7E005D7E99 /* BBRootViewController.m */,
 				A8DF19F71AAA52DD00893556 /* BBSplashViewController.h */,
 				A8DF19F81AAA52DD00893556 /* BBSplashViewController.m */,
+				A8A73F611B082BB30084B5C2 /* BBSBars.h */,
+				A8A73F621B082BB30084B5C2 /* BBSBars.m */,
+				A8A73F641B094D4A0084B5C2 /* BBBar.h */,
+				A8A73F651B094D4A0084B5C2 /* BBBar.m */,
+				A8A73F671B0950000084B5C2 /* BBSLocation.h */,
+				A8A73F681B0950000084B5C2 /* BBSLocation.m */,
 				A8B21B831AAA483D005D7E99 /* Categories */,
 				A8B21B671AAA3A7E005D7E99 /* Images.xcassets */,
 				A8B21B691AAA3A7E005D7E99 /* LaunchScreen.xib */,
@@ -268,7 +304,11 @@
 				A8B21B631AAA3A7E005D7E99 /* BBRootViewController.m in Sources */,
 				A8B21B601AAA3A7E005D7E99 /* BBAppDelegate.m in Sources */,
 				A8DF19F91AAA52DD00893556 /* BBSplashViewController.m in Sources */,
+				A8A73F631B082BB30084B5C2 /* BBSBars.m in Sources */,
+				A8A73F691B0950000084B5C2 /* BBSLocation.m in Sources */,
 				A8DF19FC1AAA530500893556 /* BBConstants.m in Sources */,
+				A8A73F5F1B07D57E0084B5C2 /* BBNetworking.m in Sources */,
+				A8A73F661B094D4A0084B5C2 /* BBBar.m in Sources */,
 				A8B21B5D1AAA3A7E005D7E99 /* main.m in Sources */,
 				A8B21B821AAA4832005D7E99 /* UIColor+BBColors.m in Sources */,
 			);
